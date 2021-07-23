@@ -25,6 +25,6 @@ Open CMake and specify the source code location (in our case *C:/robotology/robo
 Set the CREATE_PYTHON varoable to True and press **Configure** again. You should be now able to press **Generate** and **Open Project** to open the build files in Visual Studio.
 From Visual Studio you can finally click on Build -> Build Solution to generate the python bindings.
 
-> If while compiling the bindings you get the error “LNK1104 cannot open file ‘python39_d.lib‘“ you can find a detailed explanation of how to solve it at https://www.programmersought.com/article/63328449811/
+> ⚠️ If while compiling the bindings you get the error “LNK1104 cannot open file ‘python39_d.lib‘“ you can find a detailed explanation of how to solve it at https://www.programmersought.com/article/63328449811/
 
 Now that the build is compiled find the generated files *yarp.py*, *\_yarp.pyd*, *\_yarp.pyd* and *\_yarp.exp* and *\_yarp.pdb* and add it to the PYTHONPATH environment. You should now be able to import yarp in your python projects.
