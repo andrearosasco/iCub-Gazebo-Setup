@@ -28,3 +28,17 @@ From Visual Studio you can finally click on Build -> Build Solution to generate 
 > ⚠️ If, while compiling the bindings, you get the error “LNK1104 cannot open file ‘python39_d.lib‘“ you can find a detailed explanation of how to solve it at https://www.programmersought.com/article/63328449811/
 
 Now that the build is compiled find the generated files *yarp.py*, *\_yarp.pyd*, *\_yarp.pyd* and *\_yarp.exp* and *\_yarp.pdb* and add it to the PYTHONPATH environment. You should now be able to import yarp in your python projects.
+
+## How to Use
+Now we will reproduce the demo illustrated in the .gif above, where an iCub model raise his hand when he sees a person and lower its hand when he doesn't see a person.
+
+Download the gazebo models (or just the *standing_person* model) from https://github.com/osrf/gazebo_models and move it in the gazebo_models directory (in our case *C:\robotology\gazebo\install\bin\gazebo_models*).
+
+Start the yarpserver. Open a command line and type "yarpserver".
+
+Then, start the simulation environment Gazebo: just open a command line and type "gazebo".
+
+Insert into gazebo the visuomanip model from the insert pane on the left side of the screen.
+
+Now launch the script [icub-hello.py](icub-hello.py), wait some second to let yarp connect to the iCub model and insert the standing-person model in front of iCub.
+If everything was correctly installed, iCub should raise his hand!
