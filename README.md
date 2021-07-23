@@ -14,6 +14,6 @@ This will also install the Gazebo simulation environment and set up the PATH sys
 To interact with the icub model through YARP using python you will need to compile the python bindings using the Swig interface compiler.
 
 First you will need to install the last version of swigwin in your home directory:
-1 - Downolad the latest version of swig from http://www.swig.org/download.html
-2 - Extract the content in your home directory
-3 - Inclued the swigwin directory in the windows PATH system variable
+1. Downolad the latest version of swig from http://www.swig.org/download.html
+2. Extract the content in your home directory
+3. Inclued the swigwin directory in the windows PATH system variable
