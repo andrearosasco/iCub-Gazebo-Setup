@@ -6,4 +6,4 @@ The purpose of this repository is to guide you through the installation of YARP 
 
 ![](resources/icub-hello.gif)
 
-### Install the Superbuild
+## Install the Superbuild
