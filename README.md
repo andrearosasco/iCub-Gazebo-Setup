@@ -9,3 +9,7 @@ The purpose of this repository is to guide you through the installation of YARP 
 ## Install the Superbuild
 The superbuild is comprised by different software developed by the [robotology GitHub organization](https://github.com/robotology/), such as the YARP middleware and the iCub gazebo models. To downoload the supurbuild on windows you just need to access the [release page](https://github.com/robotology/robotology-superbuild/releases) and downolad and execute the full installer.
 This will also install the Gazebo simulation environment and set up the PATH system variable.
+
+## Compile the Python Bindings
+To interact with the icub model through YARP using python you will need to compile the python bindings using the Swig interface compiler.
+### Installing Swig
