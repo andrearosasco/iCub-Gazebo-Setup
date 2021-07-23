@@ -3,3 +3,5 @@
 [![Python](https://img.shields.io/badge/python-3.8-blue.svg?style=flat-square)](https://www.python.org/) 
 
 ![](resources/icub-hello.gif)
+
+The purpose of this repository is to 
