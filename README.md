@@ -17,3 +17,14 @@ First you will need to install the last version of swigwin in your home director
 1. Downolad the latest version of swig from http://www.swig.org/download.html
 2. Extract the content in your home directory
 3. Inclued the swigwin directory in the windows PATH system variable
+
+Now install [CMake](https://cmake.org/) and [Visual Studio](https://visualstudio.microsoft.com/it/) with the "Desktop Development with C++" workload. They will be needed to compile the bindings.
+
+Open CMake and specify the source code location (in our case *C:/robotology/robotology/share/yarp/bindings*), the build location (*C:/robotology/robotology/share/yarp/bindings/build*) and press **Configure**. A list of variable should appear in the upper part of the windows. 
+
+Set the CREATE_PYTHON varoable to True and press **Configure** again. You should be now able to press **Generate** and **Open Project** to open the build files in Visual Studio.
+From Visual Studio you can finally click on Build -> Build Solution to generate the python bindings.
+
+> If while compiling the bindings you get the error “LNK1104 cannot open file ‘python39_d.lib‘“ you can find a detailed explanation of how to solve it at https://www.programmersought.com/article/63328449811/
+
+Now that the build is compiled find the generated files yarp.py, \_yarp.pyd, \_yarp.pyd and \_yarp.exp and \_yarp.pdb and add it to the PYTHONPATH environment. You should now be able to import yarp in your python projects.
