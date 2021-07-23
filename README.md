@@ -31,14 +31,9 @@ Now that the build is compiled find the generated files *yarp.py*, *\_yarp.pyd*,
 
 ## How to Use
 Now we will reproduce the demo illustrated in the .gif above, where an iCub model raise his hand when he sees a person and lower its hand when he doesn't see a person.
-
 Download the gazebo models (or just the *standing_person* model) from https://github.com/osrf/gazebo_models and move it in the gazebo_models directory (in our case *C:\robotology\gazebo\install\bin\gazebo_models*).
-
-Start the yarpserver. Open a command line and type "yarpserver".
-
-Then, start the simulation environment Gazebo: just open a command line and type "gazebo".
-
+Start the yarpserver by opening a command line and typing "yarpserver".
+Then, start the simulation environment Gazebo by opening a command line and typing "gazebo".
 Insert into gazebo the visuomanip model from the insert pane on the left side of the screen.
-
 Now launch the script [icub-hello.py](icub-hello.py), wait some second to let yarp connect to the iCub model and insert the standing-person model in front of iCub.
 If everything was correctly installed, iCub should raise his hand!
