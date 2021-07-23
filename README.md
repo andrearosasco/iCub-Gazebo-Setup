@@ -1,1 +1,1 @@
-
+![](resources/icub-hello.gif)
