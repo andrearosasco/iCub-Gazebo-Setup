@@ -36,7 +36,7 @@ With the superbuild installed and the bindings compiled you are ready to start t
 2. Start the Gazebo simulation environment by opening a command line and typing `gazebo`.
 3. Insert into Gazebo the *iCubGazeboV2_5_visuomanip* model from the insert pane on the left side of the screen.
 
-As you complete this third step you will see in the two terminals text showing the connection between the Yarp server and the iCub model inside Gazebo.
+As you complete this third step you will see the two terminals showing the connection between the Yarp server and the iCub model inside Gazebo.
 After that, you can run the [icub-hello.py](icub-hello.py). This will open a small panel showing the visual feed of the iCub model processed by an object recognition algorithm.
 If iCub detect a person it will greet him by raising his hand.
 
