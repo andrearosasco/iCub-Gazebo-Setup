@@ -30,10 +30,14 @@ From Visual Studio you can finally click on Build -> Build Solution to generate 
 Now that the build is compiled find the generated files *yarp.py*, *\_yarp.pyd*, *\_yarp.pyd* and *\_yarp.exp* and *\_yarp.pdb* and add it to the PYTHONPATH environment. You should now be able to import yarp in your python projects.
 
 ## How to Use
-Now we will reproduce the demo illustrated in the .gif above, where an iCub model raise his hand when he sees a person and lower its hand when he doesn't see a person.
-Download the gazebo models (or just the *standing_person* model) from https://github.com/osrf/gazebo_models and move it in the gazebo_models directory (in our case *C:\robotology\gazebo\install\bin\gazebo_models*).
-Start the yarpserver by opening a command line and typing "yarpserver".
-Then, start the simulation environment Gazebo by opening a command line and typing "gazebo".
-Insert into gazebo the visuomanip model from the insert pane on the left side of the screen.
-Now launch the script [icub-hello.py](icub-hello.py), wait some second to let yarp connect to the iCub model and insert the standing-person model in front of iCub.
-If everything was correctly installed, iCub should raise his hand!
+With the superbuild installed and the the bindings compiled you are ready to start the environment and reproduce the demo shown above.
+
+1. Start the yarpserver by opening a command line and typing "_yarpserver_".
+2. Start the Gazebo simulation environment by opening a command line and typing "_gazebo_".
+3. Insert into gazebo the visuomanip model from the insert pane on the left side of the screen.
+
+As you complete this third step you will see in the two terminals text showing the connection between yarpserver and the iCub model inside Gazebo.
+After that you can run the [icub-hello.py](icub-hello.py). This will open a small panel showing the visual feed of the iCub model processed by an object recognition algorithm.
+If iCub detect a person it will greet him by raising his hand.
+
+You can download the gazebo models (or just the *standing_person* model) from https://github.com/osrf/gazebo_models and move it in the gazebo_models directory (in our case *C:\Users\your-username\.gazebo\models*).
