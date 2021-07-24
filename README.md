@@ -44,4 +44,5 @@ You can download the gazebo models (or just the *standing_person* model) from ht
 
 ### Credits
 [Stefano Berti](https://github.com/StefanoBerti)
+
 [Andrea Rosasco](https://andrearosasco.github.io/)
