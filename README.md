@@ -27,7 +27,7 @@ From Visual Studio you can finally click on Build -> Build Solution to generate 
 
 > ⚠️ If, while compiling the bindings, you get the error “LNK1104 cannot open file ‘python39_d.lib‘“ you can find a detailed explanation of how to solve it at https://www.programmersought.com/article/63328449811/
 
-Now that the build is compiled find the generated files *yarp.py*, *\_yarp.pyd*, *\_yarp.lib* *\_yarp.exp* and *\_yarp.pdb* and add it to the PYTHONPATH environment. You should now be able to import yarp in your python projects.
+Now that the build is compiled find the generated files *yarp.py*, *\_yarp.pyd*, *\_yarp.lib*, *\_yarp.exp* and *\_yarp.pdb* and add it to the PYTHONPATH environment variable. You should now be able to import yarp in your python projects.
 
 ## How to Use
 With the superbuild installed and the the bindings compiled you are ready to start the environment and reproduce the demo shown above.
