@@ -25,16 +25,16 @@ Open CMake and specify the source code location (in our case *C:/robotology/robo
 Set the CREATE_PYTHON variable to True and press **Configure** again. You should be now able to press **Generate** and **Open Project** to open the build files in Visual Studio.
 From Visual Studio you can finally click on Build -> Build Solution to generate the python bindings.
 
-> ⚠️ If, while compiling the bindings, you get the error “LNK1104 cannot open file ‘python39_d.lib‘“ you can find a detailed explanation of how to solve it at https://www.programmersought.com/article/63328449811/
+> ⚠️ If, while compiling the bindings, you get the error `LNK1104 cannot open file ‘python39_d.lib‘` you can find a detailed explanation of how to solve it at https://www.programmersought.com/article/63328449811/
 
 Now that the build is compiled find the generated files *yarp.py*, *\_yarp.pyd*, *\_yarp.lib*, *\_yarp.exp* and *\_yarp.pdb* and add it to the PYTHONPATH environment variable. You should now be able to import yarp into your python projects.
 
 ## How to Use
 With the superbuild installed and the bindings compiled you are ready to start the environment and reproduce the demo shown above.
 
-1. Start the Yarp server by opening a command line and typing "_yarpserver_".
-2. Start the Gazebo simulation environment by opening a command line and typing "_gazebo_".
-3. Insert into Gazebo the iCubGazeboV2_5_visuomanip model from the insert pane on the left side of the screen.
+1. Start the Yarp server by opening a command line and typing `yarpserver`.
+2. Start the Gazebo simulation environment by opening a command line and typing `gazebo`.
+3. Insert into Gazebo the *iCubGazeboV2_5_visuomanip* model from the insert pane on the left side of the screen.
 
 As you complete this third step you will see in the two terminals text showing the connection between the Yarp server and the iCub model inside Gazebo.
 After that, you can run the [icub-hello.py](icub-hello.py). This will open a small panel showing the visual feed of the iCub model processed by an object recognition algorithm.
