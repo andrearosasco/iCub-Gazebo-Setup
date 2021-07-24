@@ -40,4 +40,4 @@ As you complete this third step you will see in the two terminals text showing t
 After that you can run the [icub-hello.py](icub-hello.py). This will open a small panel showing the visual feed of the iCub model processed by an object recognition algorithm.
 If iCub detect a person it will greet him by raising his hand.
 
-You can download the gazebo models (or just the *standing_person* model) from https://github.com/osrf/gazebo_models and move it in the gazebo_models directory (in our case *C:\Users\your-username\.gazebo\models*).
+You can download the gazebo models (or just the *standing_person* model) from https://github.com/osrf/gazebo_models and move it in the gazebo_models directory (in our case *C:\Users\your-username\\.gazebo\models*).
